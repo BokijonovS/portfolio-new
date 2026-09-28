@@ -44,7 +44,7 @@ export const feedItems: FeedItem[] = [
     type: "article",
     title: "From Backend Engineering in Tashkent to Apple Platforms in Naples",
     subtitle: "Why writing Django REST APIs made me a more thoughtful mobile app builder",
-    date: "Autumn 2024",
+    date: "Autumn 2026",
     category: "Thoughts & Craft",
     badge: "Essay",
     excerpt:
@@ -88,7 +88,7 @@ export const feedItems: FeedItem[] = [
     type: "event",
     title: "Accepted to Apple Developer Academy in Naples",
     subtitle: "Official acceptance and relocation to Università di Napoli Federico II",
-    date: "2024",
+    date: "2026",
     category: "Milestone",
     badge: "Academy Milestone",
     excerpt:
@@ -128,7 +128,7 @@ export const feedItems: FeedItem[] = [
     type: "event",
     title: "Awarded University Foundation Diploma from PDP University",
     subtitle: "Core computer science fundamentals, logic, and mathematics",
-    date: "Completed",
+    date: "2026",
     category: "Academic Foundation",
     badge: "Foundation Diploma",
     excerpt:
@@ -137,6 +137,40 @@ export const feedItems: FeedItem[] = [
       "Received the University Foundation Diploma from PDP University, providing mathematical rigor, algorithm analysis, and software principles that underpin my engineering work today.",
     ],
     tags: ["PDP University", "Foundation Diploma", "Computer Science"],
+    readingTime: "1 min read",
+  },
+  {
+  id: "pdp-full-scholarship",
+  type: "event",
+  title: "Awarded a 100% Scholarship from PDP University",
+  subtitle: "Earning a place among a select group of fully funded students",
+  date: "2025",
+  category: "Academic Achievement",
+  badge: "100% Scholarship",
+  excerpt:
+    "After a demanding selection process, earned a full 100% scholarship from PDP University, becoming one of a limited number of students to receive full financial support.",
+  content: [
+    "Earning a 100% scholarship from PDP University was one of the most challenging academic milestones of my journey. The process demanded consistent effort, strong academic performance, and the ability to keep pushing through difficult stages.",
+    "Despite the pressure and uncertainty, I made it through the selection process and became one of the few students awarded a full scholarship. More than financial support, it was recognition of the work, discipline, and persistence I had invested into building my future in technology.",
+  ],
+  tags: ["PDP University", "100% Scholarship", "Academic Achievement"],
+  readingTime: "1 min read",
+  },
+  {
+    id: "ielts-7-2026",
+    type: "event",
+    title: "Achieved IELTS 7.0 Overall",
+    subtitle: "English proficiency milestone for my international academic journey",
+    date: "March 2026",
+    category: "Language & Education",
+    badge: "IELTS 7.0",
+    excerpt:
+      "Achieved an overall IELTS band score of 7.0, with 8.0 in Listening, 7.0 in Reading, and 6.5 in both Writing and Speaking.",
+    content: [
+      "Achieved an overall IELTS band score of 7.0, marking an important milestone in my preparation for international education and opportunities.",
+      "My results were 8.0 in Listening, 7.0 in Reading, 6.5 in Writing, and 6.5 in Speaking. This achievement strengthened my confidence in communicating and studying in an international environment while continuing to develop my technical background.",
+    ],
+    tags: ["IELTS", "English", "Academic Achievement"],
     readingTime: "1 min read",
   },
 ];
