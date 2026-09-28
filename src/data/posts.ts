@@ -38,58 +38,6 @@ export const quotes = [
 ];
 
 export const feedItems: FeedItem[] = [
-  // PROJECTS
-  {
-    id: "partenope-pulse",
-    type: "project",
-    title: "Partenope Transit & Urban Pulse",
-    subtitle: "Naples commuter assistant designed at the Apple Developer Academy",
-    date: "Current Focus · 2024",
-    category: "iOS & Swift",
-    badge: "Academy Project",
-    excerpt:
-      "A native iOS application designed for the rhythm of Naples transit, combining offline-first Swift caching with Django REST telemetry.",
-    content: [
-      "When I relocated from Tashkent to Naples to begin my studies at the Apple Developer Academy, the very first thing that struck me was the dynamic urban pulse of the city.",
-      "Navigating the regional metro lines and historic funiculars presented a real everyday design challenge. Within the Academy's Challenge-Based Learning (CBL) framework, our team began researching how commuters experience schedule variability.",
-      "On the client side, the app is crafted purely in SwiftUI, leveraging Swift Concurrency and local CoreData mirrors to ensure departure boards remain instant even underground.",
-      "On the backend, my Python and Django background allowed us to architect a lightweight telemetry layer that caches municipal feeds in PostgreSQL/Redis, reducing cellular data footprint by over 60%.",
-    ],
-    tags: ["SwiftUI", "Apple Academy", "Python", "Django REST", "PostgreSQL", "Naples"],
-    readingTime: "4 min read",
-    githubUrl: "https://github.com/BokijonovS",
-    highlights: [
-      "Native iOS 18 interactive widgets & Live Activities",
-      "Offline-first architecture with background synchronization",
-      "Sub-50ms serialized responses from Django endpoints",
-      "Apple Human Interface Guidelines compliance",
-    ],
-  },
-  {
-    id: "sentinel-vault",
-    type: "project",
-    title: "Sentinel Key & Auth Guardian",
-    subtitle: "Cryptographic credential and token manager with zero-knowledge sync",
-    date: "2024",
-    category: "Full Stack App",
-    badge: "Security & Systems",
-    excerpt:
-      "Bridges Apple Keychain biometric authentication with a hardened Django backend enforcing strict zero-knowledge encryption.",
-    content: [
-      "Coming from backend engineering at BMGSoft, security has always been a non-negotiable principle. I wanted to build an app that developers and teams could trust with their production environment variables.",
-      "Sentinel utilizes client-side CryptoKit before any payload leaves the iOS device. The Python/Django backend never receives plaintext keys—it simply acts as an audited, encrypted synchronization pipe with PostgreSQL row-level isolation.",
-      "The result is a fluid mobile experience with FaceID authentication and bank-grade backend guarantees.",
-    ],
-    tags: ["SwiftUI", "CryptoKit", "Python", "Django", "PostgreSQL", "Docker", "Security"],
-    readingTime: "3 min read",
-    githubUrl: "https://github.com/BokijonovS",
-    highlights: [
-      "Zero-knowledge architecture: backend never stores decrypted secrets",
-      "Instant FaceID authentication integrated with iOS Keychain",
-      "Automated Postman test suites covering 100% of auth routes",
-    ],
-  },
-
   // ARTICLES & ESSAYS
   {
     id: "from-backend-to-apple-academy",

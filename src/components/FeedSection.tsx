@@ -17,12 +17,17 @@ export default function FeedSection() {
   const [activeTab, setActiveTab] = useState<"all" | PostType>("all");
   const [selectedItem, setSelectedItem] = useState<FeedItem | null>(null);
 
-  const tabs: { id: "all" | PostType; label: string; icon: React.ElementType }[] = [
+  const allTabs: { id: "all" | PostType; label: string; icon: React.ElementType }[] = [
     { id: "all", label: "All Updates", icon: Layers },
     { id: "project", label: "Apps & Projects", icon: Smartphone },
     { id: "article", label: "Articles & Notes", icon: BookOpen },
     { id: "event", label: "Events & Milestones", icon: Calendar },
   ];
+
+  const availableTypes = new Set(feedItems.map((item) => item.type));
+  const tabs = allTabs.filter(
+    (tab) => tab.id === "all" || availableTypes.has(tab.id as PostType)
+  );
 
   const filteredItems =
     activeTab === "all"
@@ -39,10 +44,10 @@ export default function FeedSection() {
             <span>Journal & Public Releases</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-950">
-            Projects, Articles & Academy Updates
+            Articles & Academy Updates
           </h2>
           <p className="text-sm sm:text-base text-zinc-600 mt-2 max-w-xl">
-            A live feed of applications I’m building, technical write-ups, and milestones from my journey at the Apple Developer Academy.
+            A live feed of technical write-ups, essays, and milestones from my journey at the Apple Developer Academy.
           </p>
         </div>
 
