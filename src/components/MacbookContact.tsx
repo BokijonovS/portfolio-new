@@ -13,7 +13,8 @@ import {
   Wifi,
   Battery,
 } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TelegramIcon, AppleLogo } from "./Icons";
+import { GithubIcon, LinkedinIcon, TelegramIcon } from "./Icons";
+import Monogram from "./Monogram";
 
 export default function MacbookContact() {
   const [copied, setCopied] = useState(false);
@@ -103,7 +104,7 @@ export default function MacbookContact() {
                   <span className="w-2.5 h-2.5 rounded-full bg-amber-400 border border-amber-500/40 inline-block" />
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 border border-emerald-500/40 inline-block" />
                 </div>
-                <AppleLogo className="w-3.5 h-3.5 text-zinc-800 ml-1 shrink-0" />
+                <Monogram className="w-3.5 h-3.5 text-zinc-800 ml-1 shrink-0" />
                 <span className="font-semibold text-zinc-900 hidden sm:inline">
                   Sanatbek Bokijonov
                 </span>

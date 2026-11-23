@@ -4,13 +4,13 @@ import React from "react";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
 import { ArrowDown, Sparkles, Compass, Terminal, BookOpen, Quote } from "lucide-react";
-import AntigravityHeroOriginal from "@/components/AntigravityHeroOriginal";
+import HeroParticles from "@/components/HeroParticles";
 
 export default function WhiteHero() {
   return (
     <section id="top" className="relative pt-32 sm:pt-40 pb-4 sm:pb-6 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[85vh] flex items-center justify-center">
-      {/* Exact Original Google Antigravity Particle Simulation */}
-      <AntigravityHeroOriginal />
+      {/* Decorative particle field */}
+      <HeroParticles />
 
       <div className="max-w-6xl mx-auto text-center relative z-10 w-full">
         {/* Main Name Headline - Wide & Expansive */}

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
 import { Menu, X, ArrowUpRight, Sparkles } from "lucide-react";
-import AppleLogo from "@/components/AppleLogo";
+import Monogram from "@/components/Monogram";
 
 export default function WhiteNavbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -73,12 +73,12 @@ export default function WhiteNavbar() {
           href="#top"
           className="flex items-center gap-2.5 text-zinc-900 font-medium group transition-transform active:scale-95"
         >
-          <AppleLogo className="w-4 h-4 text-zinc-950 shrink-0" />
+          <Monogram className="w-5 h-5 text-zinc-950 shrink-0" />
           <span className="text-sm font-semibold tracking-tight text-zinc-900">
             {siteConfig.name}
           </span>
           <span className="hidden sm:inline-flex items-center text-[10px] tracking-wide font-mono px-2 py-0.5 rounded-full bg-zinc-100 text-zinc-600 border border-zinc-200/60">
-            Apple Academy · Naples
+            Academy student · Naples
           </span>
         </Link>
 
@@ -131,7 +131,7 @@ export default function WhiteNavbar() {
           <div className="flex items-center justify-between pb-3 border-b border-zinc-100 text-xs text-zinc-500 font-mono">
             <span>Navigation</span>
             <span className="text-zinc-700 flex items-center gap-1">
-              <Sparkles className="w-3 h-3 text-blue-600" /> Apple Academy · Naples
+              <Sparkles className="w-3 h-3 text-blue-600" /> Academy student · Naples
             </span>
           </div>
           {navLinks.map((item) => (

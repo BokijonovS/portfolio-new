@@ -32,17 +32,6 @@ export const metadata: Metadata = {
     "Tashkent",
   ],
   authors: [{ name: "Sanatbek Bokijonov" }],
-  icons: {
-    icon: [
-      { url: "/apple-icon.svg?v=3", type: "image/svg+xml" },
-      { url: "/icon.png?v=3", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.ico?v=3", sizes: "any" },
-    ],
-    shortcut: "/apple-icon.svg?v=3",
-    apple: [
-      { url: "/apple-touch-icon.png?v=3", sizes: "180x180", type: "image/png" },
-    ],
-  },
   openGraph: {
     title: "Sanatbek Bokijonov — Apple Developer Academy Student & App Builder",
     description:
